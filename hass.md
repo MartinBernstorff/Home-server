@@ -1,7 +1,14 @@
 # HASS
 ---
-
-Home assistant is installed in a virtualenv under user ```hass``` in the directory ```/serv/hass```
+|  Key  | Value  |
+| --- | --- |
+|User| `hass` |
+|Group| `hass`|
+|Install dir| `/serv/hass/`|
+|Config alis| `~/.homeassistant/`
+|Config dir| `/home/hass/.homeassistant/`
+|Log dir| `/home/hass/.homeassistant/`|
+|Upstart script| `/etc/systemd/system/hass.service`|
 
 ## Upgrading home assistant
 ##### 1. Become the new user
