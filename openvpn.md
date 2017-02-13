@@ -1,1 +1,1 @@
-For openVPN, check seperate [respository] (https://github.com/ryqiem/openvpn)
+For openVPN, check seperate [repository] (https://github.com/ryqiem/openvpn)
