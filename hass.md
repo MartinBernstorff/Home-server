@@ -9,6 +9,7 @@
 |Config dir| `/home/hass/.homeassistant/`
 |Log dir| `/home/hass/.homeassistant/`|
 |Upstart script| `/etc/systemd/system/hass.service`|
+|Port|`8123`|
 
 ## Upgrading home assistant
 ##### 1. Become the new user
