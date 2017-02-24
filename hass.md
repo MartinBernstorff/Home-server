@@ -13,16 +13,16 @@
 
 ## Upgrading home assistant
 ##### 1. Become the new user
-```
+``` bash
 sudo su -s /bin/zsh hass
 ```
 
 Replace `/bin/zsh` with `/bin/bash` if you're running the default shell.
 ##### 2. Activate the virtualenv
-```
+``` bash
 source /srv/hass/bin/activate
 ```
 ##### 3. Upgrade home assistant
-```
+``` bash
 pip3 install --upgrade homeassistant
 ```
