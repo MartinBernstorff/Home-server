@@ -1,13 +1,12 @@
-##Reference
-|  Key  | Value  |
-| --- | --- |
-|User| `martin` |
-|Group| `martin`|
-|Install dir| `/opt/NzbDrone`|
-|Config dir| `/root/.config/NzbDrone`
-|Log dir| `/root/.config/NzbDrone/logs`|
-|Upstart script| `/etc/systemd/system/sonarr.service`|
-|Port| `8989`|
-
-##Guides
-1. [Backup and restore database] (https://github.com/Sonarr/Sonarr/wiki/Backup-and-Restore)
+```
+docker run \
+	--restart=always
+    --name sonarr \
+    -p 8989:8989 \
+    -e PUID=1000 -e PGID=1000 \
+    -v /etc/localtime:/etc/localtime:ro \
+    -v /home/martin/docks/sonarr/config:/config \
+    -v /home/martin/torrents/tv:/tv \
+    -v /home/martin/torrents/tv:/downloads \
+    linuxserver/sonarr
+```

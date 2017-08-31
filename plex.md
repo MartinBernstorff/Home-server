@@ -1,13 +1,14 @@
-##Reference
-|  Key  | Value  |
-| --- | --- |
-|User| `plex` |
-|Group| `plex`|
-|Install dir| `/usr/lib/plexmediaserver`|
-|Log dir| `/var/lib/plexmediaserver/Library/Application\ Support/Plex\ Media\ Server/Logs`|
-|Application support| `/var/lib/plexmediaserver/Library/Application\ Support/`
-|Upstart script| `/etc/systemd/system/plexmediaserver.service`|
-|Port| `32400`|
-
-##Guides
-1. [Guide] (URL)
+```
+docker run \
+--restart=always \
+--name=plex \
+--net=host \
+-e VERSION=latest \
+-e PUID=1000 -e PGID=1000 \
+-e TZ=Europe/Copenhagen \
+-v /home/martin/docks/plex/config:/config \
+-v /home/martin/torrents/tv:/data/tvshows \
+-v /home/martin/torrents/movies:/data/movies \
+-v /home/martin/docks/plex/transcode:/transcode \
+linuxserver/plex
+```
