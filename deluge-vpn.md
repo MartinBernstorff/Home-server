@@ -11,6 +11,7 @@ docker run -d \
     -v /home/martin/docks/deluge/config:/config \
     -v /etc/localtime:/etc/localtime:ro \
     -e VPN_ENABLED=yes \
+    -e VPN_REMOTE=179.43.156.34 \
     -e VPN_USER=p1920734 \
     -e VPN_PASS=PWu5VbdFyG \
     -e VPN_PROV=pia \
@@ -26,3 +27,13 @@ docker run -d \
 ```
 
 `https://hub.docker.com/r/binhex/arch-delugevpn/`
+
+#Slow speeds
+
+Had to make some hacky changes to the img and delete all other mirrors than Netherlands.
+
+`docker exec -i -t delugevpn bash`
+
+`cd /config/openvpn`
+
+Remove all other mirrors.
