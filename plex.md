@@ -1,5 +1,5 @@
 ```
-docker run \
+docker run -d \
 --restart=always \
 --name=plex \
 --net=host \

@@ -1,6 +1,6 @@
 ##Docker
 ```
-docker run -d \
+docker run -d --restart=always \
     --cap-add=NET_ADMIN \
     -p 8112:8112 \
     -p 8118:8118 \

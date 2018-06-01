@@ -1,6 +1,6 @@
 ```
-docker run \
-	--restart=always
+docker run -d \
+	--restart=always \
     --name sonarr \
     -p 8989:8989 \
     -e PUID=1000 -e PGID=1000 \

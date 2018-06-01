@@ -9,3 +9,11 @@ Install rclone.
 15 4,12,20 * * * rclone sync --copy-links --fast-list /home/martin/archive/tier-1 backblaze:tier-1 2>&1 >> /home/martin/.logs/rclone.log
 ```
 
+## Exclude file
+
+````Exclude file for rsync backups
+#Exclude file for rsync backups
+*.log
+home-assistant_v2.db
+*.git
+````
