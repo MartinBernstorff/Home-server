@@ -12,3 +12,13 @@ docker run -d \
 -v /home/martin/docks/plex/transcode:/transcode \
 linuxserver/plex
 ```
+
+To upgrade:
+
+```bash
+docker stop plex
+docker rm -f plex
+docker pull linuxserver/plex
+```
+
+Then run the above command
